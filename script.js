@@ -20,10 +20,10 @@ $(document).ready(function () {
                 items:1
             },
             600:{
-                items:7
+                items:3
             },
             1000:{
-                items:7
+                items:3
             }
         }
     });
