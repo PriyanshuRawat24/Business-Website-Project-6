@@ -83,23 +83,23 @@ navbar-nav {
   margin-top: 80px;
 }
 
-.home-about-img-box img {
-  max-width: 100%;
-  max-height: 450px;
-  margin-left: 90px;
-}
 
-.home-about-para-box h5 {
-  margin-top: 40px;
-  margin-right: 20px;
-  text-transform: uppercase;
-  color: #56a2c2;
+.home-about-img-box img {
+  max-width: 80%;
+  max-height: 450px;
+  margin-left: 70px;
 }
 
 .home-about-para-box h2 {
   margin-top: 10px;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+.home-about-para-box h5 {
+  color: #56a2c2;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .home-about-para-box p {
@@ -1018,15 +1018,19 @@ button {
 /* media quary */
 
 @media only screen and (max-width: 1200px) {
+  .home-about-img-box img {
+    max-width: 100%;
+    max-height: 450px;
+    margin-left: 0px;
+  }
 }
 
-@media only screen and (max-width: 991px) {
-}
+@media only screen and (max-width: 991px) {}
 
 @media only screen and (max-width: 767px) {
   
-  .home-about-img-box img {
-    margin-left: 0px;
+  .home-about-para-box h5{
+    margin-top: 30px;
   }
   .meet-with-para-box {
     margin-left: 0;
@@ -1039,6 +1043,9 @@ button {
   }
   .contact-info-main-box-4 {
     margin-top: 45px;
+  }
+  .hr-solution-card-box-2 {
+    margin-top: 21px;
   }
   .footer {
     font: bold 14px sans-serif;
