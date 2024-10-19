@@ -8,7 +8,7 @@ body {
 
 /* navbar */
 
-.navbar {
+.navbar  {
   background-color: #56a2c2;
 }
 
@@ -26,12 +26,15 @@ navbar-nav {
 
 .collapse {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   color: white;
+  font-size: 20px;
+  font-weight: 600;
+  
 }
 
-.icon-width {
-  width: 2rem;
+.collapse a{
+  margin-right: 30px; 
 }
 
 /* banner */
