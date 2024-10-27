@@ -264,7 +264,10 @@ navbar-nav {
   margin-inline: auto;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
 }
+
 .card img {
   max-width: 100%;
   clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0%);
@@ -284,23 +287,18 @@ navbar-nav {
   flex-direction: column;
 }
 
+.card:hover .media-icon {
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+}
+
 .media-icon i {
   color: white;
 }
 
 .media-icon i:hover {
   color: black;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-}
-
-.card:hover .media-icon {
-  opacity: 1;
-  visibility: visible;
-  right: 0;
 }
 
 .description {
@@ -1031,7 +1029,10 @@ button {
 @media only screen and (max-width: 991px) {}
 
 @media only screen and (max-width: 767px) {
-  
+  .collapse {
+    display: flex;
+    justify-content: flex-start;
+  }
   .home-about-para-box h5{
     margin-top: 30px;
   }
@@ -1066,6 +1067,7 @@ button {
   .footer .footer-center i {
     margin-left: 0;
   }
+  
 }
 @media only screen and (max-width: 600px) {
   table {
